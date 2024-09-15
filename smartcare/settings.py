@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-_t%e(kns&)v6@n#yn2m&m4$6nd^dd$d2dxwsyw83=(b)y#*p6&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["doctor-appointment-vef1.onrender.com"]
 CSRF_TRUSTED_ORIGINS = ['https://*doctor-appointment-vef1.onrender.com', 'https://*127.0.0.1']
 
 # Application definition
