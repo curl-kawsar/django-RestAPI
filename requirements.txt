@@ -153,7 +153,6 @@ pyttsx3
 pytweening
 pytz
 pywhatkit
-pywin32; python_version >= "3.7" and python_version < "3.11"
 PyYAML
 pyzmq
 ratelim
