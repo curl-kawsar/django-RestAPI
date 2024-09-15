@@ -33,7 +33,7 @@ class RegistrationApiView(APIView):
     
             token = default_token_generator.make_token(user)
             uid = urlsafe_base64_encode(force_bytes(user.pk))
-            confirm_link = f"http://127.0.0.1:8000/activate/{uid}/{token}"
+            confirm_link = f"https://doctor-appointment-vef1.onrender.com/activate/{uid}/{token}"
             email_subject = "Activate your account"
             email_body = render_to_string('email.html', {
                 'user': user,
@@ -43,7 +43,7 @@ class RegistrationApiView(APIView):
             email = EmailMultiAlternatives(
                 email_subject, 
                 '', 
-                from_email='contact@helphash.org',  # Ensure this matches your configured email
+                from_email='contact@helphash.org',
                 to=[user.email]
             )
             email.attach_alternative(email_body, "text/html")
